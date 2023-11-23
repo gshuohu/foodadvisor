@@ -18,7 +18,7 @@ tasks:
       sed -i "1s#.*#NEXT_PUBLIC_API_URL=$(sed s#https://#https://1337-#g <<< $GITPOD_WORKSPACE_URL)#" .env.development
     command: yarn dev
 ports:
-  - port: 1337
+  - port: 1338
     onOpen: open-browser
     visibility: public
   - port: 3000
